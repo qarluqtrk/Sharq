@@ -54,6 +54,8 @@ class Apartments(models.Model):
     image = models.ImageField(upload_to='images/')
     floor_plan = models.ImageField(upload_to='floor_plans/')
     text = models.TextField()
+    bathrooms = models.PositiveIntegerField(null=True, blank=True)
+    rooms = models.PositiveIntegerField(null=True, blank=True)
     area = models.CharField(max_length=255)
 
 

@@ -25,7 +25,8 @@
     <link rel="apple-touch-icon" sizes="144x144" href="{% static "assets/img/favicons/apple-icon-144x144.png" %}">
     <link rel="apple-touch-icon" sizes="152x152" href="{% static "assets/img/favicons/apple-icon-152x152.png" %}">
     <link rel="apple-touch-icon" sizes="180x180" href="{% static "assets/img/favicons/apple-icon-180x180.png" %}">
-    <link rel="icon" type="image/png" sizes="192x192" href="{% static "assets/img/favicons/android-icon-192x192.png" %}">
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="{% static "assets/img/favicons/android-icon-192x192.png" %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static "assets/img/favicons/favicon-32x32.png" %}">
     <link rel="icon" type="image/png" sizes="96x96" href="{% static "assets/img/favicons/favicon-96x96.png" %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static "assets/img/favicons/favicon-16x16.png" %}">
@@ -39,7 +40,8 @@
 	============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Outfit:wght@100..900&amp;display=swap"
+          rel="stylesheet">
 
     <!--==============================
 	    All CSS File
@@ -62,539 +64,513 @@
 <body class="">
 
 
+<!--********************************
+       Code Start From Here
+******************************** -->
+<div class="cursor-follower"></div>
 
-    <!--********************************
-   		Code Start From Here
-	******************************** -->
-    <div class="cursor-follower"></div>
+<!-- slider drag cursor -->
+<div class="slider-drag-cursor"><i class="fas fa-angle-left me-2"></i> DRAG <i class="fas fa-angle-right ms-2"></i>
+</div>
 
-    <!-- slider drag cursor -->
-    <div class="slider-drag-cursor"><i class="fas fa-angle-left me-2"></i> DRAG <i class="fas fa-angle-right ms-2"></i></div>
-
-    <!--==============================
-     Preloader Logo animatsiya
-  ==============================-->
-    <div id="preloader" class="preloader ">
-        <div id="loader" class="th-preloader">
-            <div class="animation-preloader">
-                <div class="txt-loading">
-                    <span preloader-text="S" class="characters">S</span>
-
-                    <span preloader-text="H" class="characters">H</span>
-
-                    <span preloader-text="A" class="characters">A</span>
-
-                    <span preloader-text="R" class="characters">R</span>
-
-                    <span preloader-text="Q" class="characters">Q</span>
-                </div>
-            </div>
-        </div>
-    </div> <!--==============================
-    Mobile Menu
-  ============================== -->
-    <div class="th-menu-wrapper onepage-nav">
-        <div class="th-menu-area text-center">
-            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="mobile-logo">
-                <a href="index.html">
-                    <img src="{{ main_info.logo_light.url }}" style="width: 64px" alt="Realar">
-                </a>
-            </div>
-            <div class="th-mobile-menu">
-                <ul>
-                    <li><a href="#about-sec">
-                            Biz haqimizda
-                        </a></li>
-                    <li class="menu-item-has-children">
-                        <a href="#property-sec">
-                            Xonadonlar
-                        </a>
-                        <ul class="sub-menu">
-                            <li><a href="#">
-                                    Xonadon1
-                                </a></li>
-                            <li><a href="#">
-                                    Xonadon2
-                                </a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact-sec">
-                            Aloqa
-                        </a></li>
-                </ul>
-            </div>
-        </div>
-    </div><!--==============================
-	Header Area
+<!--==============================
+ Preloader Logo animatsiya
 ==============================-->
-    <header class="th-header header-layout2 onepage-nav">
-        <div class="sticky-wrapper">
-            <!-- Main Menu Area -->
-            <div class="menu-area">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
-                            <div class="header-logo">
-                                <a href="{% url 'index' %}">
-                                    <img src="{{ main_info.logo_light.url }}" style="width: 64px" alt="Realar">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <nav class="main-menu d-none d-lg-inline-block">
-                                <ul>
-                                    <li><a href="#about-sec">
-                                            Biz Haqimizda
-                                        </a></li>
-                                    <li>
-                                        <a href="#property-sec">
-                                            Xonadonlar
-                                        </a>
-                                    </li>
-                                    <li><a href="#contact-sec">
-                                            Aloqa
-                                        </a></li>
-                                </ul>
-                            </nav>
-                            <div class="header-button d-flex d-lg-none">
-                                <button type="button" class="th-menu-toggle sidebar-btn">
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                    <span class="line"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-auto d-none d-xxl-block">
-                            <div class="header-button">
-                                <a href="#contact-sec" class="th-btn style2 th-btn-icon">Tashrif Buyurish</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div id="preloader" class="preloader ">
+    <div id="loader" class="th-preloader">
+        <div class="animation-preloader">
+            <div class="txt-loading">
+                <span preloader-text="S" class="characters">S</span>
+
+                <span preloader-text="H" class="characters">H</span>
+
+                <span preloader-text="A" class="characters">A</span>
+
+                <span preloader-text="R" class="characters">R</span>
+
+                <span preloader-text="Q" class="characters">Q</span>
             </div>
-        </div>
-        </div>
-    </header>
-
-
-
-    <!--==============================
-Hero Area
-==============================-->
-    <div class="th-hero-wrapper hero-2" id="hero">
-        <div class="container">
-    <div class="swiper th-slider hero-slider1" id="heroSlide1" data-slider-options='{"effect":"fade","loop":false,"thumbs":{"swiper":".hero-grid-thumb"}}'>
-        <div class="swiper-wrapper">
-            {% for banner in banners %}
-            <div class="swiper-slide">
-                <div class="hero-inner">
-                    <div class="row gx-60 gy-50">
-                        <div class="col-xl-5">
-                            <div class="hero-thumb2-1">
-                                <img src="{{ banner.image.url }}" alt="Banner Image">
-                            </div>
-                        </div>
-                        <div class="col-xl-7">
-                            <div class="hero-style2">
-                                <h1 class="hero-title">
-                                    <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">
-                                        {{ banner.title_part1 }}
-                                    </span>
-                                    <span class="title1" data-ani="slideinup" data-ani-delay="0.5s">
-                                        {{ banner.title_part2 }}
-                                    </span>
-                                </h1>
-                                <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">
-                                    {{ banner.description }}
-                                </p>
-{#                                <div class="btn-wrap" data-ani="slideinup" data-ani-delay="0.7s">#}
-{#                                    <a href="{{ banner.button_link }}" class="th-btn style2 th-btn-icon">#}
-{#                                        {{ banner.button_text }}#}
-{#                                    </a>#}
-{#                                </div>#}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
         </div>
     </div>
+</div> <!--==============================
+    Mobile Menu
+  ============================== -->
+<div class="th-menu-wrapper onepage-nav">
+    <div class="th-menu-area text-center">
+        <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+        <div class="mobile-logo">
+            <a href="index.html">
+                {#                    <img src="{{ main_info.logo_dark.url }}" style="width: 64px" alt="Realar">#}
+            </a>
+        </div>
+        <div class="th-mobile-menu">
+            <ul>
+                <li><a href="#about-sec">
+                    Biz haqimizda
+                </a></li>
+                <li class="menu-item-has-children">
+                    <a href="#property-sec">
+                        Xonadonlar
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#">
+                            Xonadon1
+                        </a></li>
+                        <li><a href="#">
+                            Xonadon2
+                        </a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact-sec">
+                    Aloqa
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div><!--==============================
+	Header Area
+==============================-->
+<header class="th-header header-layout3 onepage-nav">
+    <div class="sticky-wrapper">
+        <!-- Main Menu Area -->
+        <div class="menu-area">
+            <button type="button" class="simple-icon sideMenuInfo sidebar-btn style3">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <img src="{{ main_info.logo_dark.url }}" style="width: 78px" alt="Realar">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <nav class="main-menu d-none d-lg-inline-block">
+                            <ul>
+                                <li><a href="#about-sec">
+                                    Biz haqimizda
+                                </a></li>
+                                <li>
+                                    <a href="#property-sec">
+                                        Xonadonlar
+                                    </a>
+                                </li>
+                                <li><a href="#contact-sec">
+                                    Aloqa
+                                </a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-button d-flex d-lg-none">
+                            <button type="button" class="th-menu-toggle sidebar-btn">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-xl-block">
+                        <div class="header-button">
+                            <a href="#contact-sec" class="th-btn style-border th-btn-icon">Request A Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-    <div class="row gx-60 justify-content-end">
-        <div class="col-xl-7">
-            <div class="slider-area hero-slider-thumb-wrap">
-                <div class="swiper th-slider hero-grid-thumb" data-slider-options='{"effect":"slide","loop":false,"slidesPerView":"3"}'>
-                    <div class="swiper-wrapper">
-                        {% for banner in banners %}
-                        <div class="swiper-slide">
-                            <div class="box-img">
-                                <img src="{{ banner.image.url }}" alt="Image">
-                                <span class="slider-number">{{ forloop.counter|add:"00" }}</span>
+
+<!--==============================
+Hero Area
+==============================-->
+<div class="hero-5" id="hero">
+    <div class="swiper th-slider hero-slider5" id="heroSlide5"
+         data-slider-options='{"effect":"fade", "autoHeight": "true"}'>
+        <div class="swiper-wrapper">
+            {% for banner in banners %}
+                <div class="swiper-slide">
+                    <div class="hero-inner">
+                        <div class="th-hero-bg" data-bg-src="{{ banner.image.url }}"></div>
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="hero-style5 text-center">
+                                        <div class="btn-wrap justify-content-center" data-ani="slideindown"
+                                             data-ani-delay="0.3s">
+                                            <a href="#" class="th-btn style-border th-btn-icon">Ish Jarayoni</a>
+                                            <a href="#" class="th-btn style-border th-btn-icon">Ipoteka</a>
+                                            <a href="#"
+                                               class="th-btn style-border th-btn-icon">Uy Bron Qilish</a>
+                                        </div>
+                                        <h1 class="hero-title text-white">
+                                            <span class="title1" data-ani="slideindown" data-ani-delay="0.3s">
+                                                {{ banner.title_part1 }} </span>
+                                            <span class="title2" data-ani="slideindown" data-ani-delay="0.4s">
+                                                {{ banner.title_part2 }} </span>
+                                        </h1>
+                                        <a href="#about-sec" class="th-btn style4 th-btn-icon" data-ani="slideinup"
+                                           data-ani-delay="0.6s">Ko'proq</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        {% endfor %}
+
                     </div>
+                </div>
+            {% endfor %}
+
+        </div>
+        <div class="slider-pagination style4"></div>
+    </div>
+    <div class="hero-social-link">
+        <div class="social-wrap">
+            <a href="https://facebook.com/" target="_blank">UySot</a>
+            <a href="https://www.instagram.com/sharq_development/" target="_blank">INSTAGRAM</a>
+            <a href="https://t.me/SHARQDEVELOPMENT_BOT" target="_blank">Telegram</a>
+        </div>
+    </div>
+    <div class="scroll-down">
+        <a href="#property-sec" class="hero-scroll-wrap"></a>
+    </div>
+</div>
+<!--======== / Hero Section ========-->
+<!--==============================
+Counter Area
+==============================-->
+<!--==============================
+About Area
+==============================-->
+<div class="about-area-10 z-index-common position-relative space overflow-hidden" id="about-sec">
+    <div class="container">
+        <div class="row gx-80 justify-content-between align-items-center">
+            <div class="col-xl-6 mb-40 mb-xl-0">
+                <div class="img-box10">
+                    <div class="img1">
+                        <img src="{{ about_images.first.image.url }}" alt="img">
+                    </div>
+                    <div class="img2">
+                        <img src="{{ about_images.1.image.url }}" alt="img">
+                    </div>
+                    <div class="img3">
+                        <img src="{{ about_images.2.image.url }}" alt="img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="title-area mb-32">
+                    <span class="sub-title">Biz haqimizda</span>
+                    <h2 class="sec-title text-theme">Sharq Biznes Turar Joy Majmuasi</h2>
+                    <p class="sec-text text-theme">Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli
+                        qurilish materiallari bilan tanilgan, zamonaviy va premium turar-joylar yaratish bo‘yicha
+                        yetakchi hisoblanadi. Har bir loyihamizda biz mijozlarimizning ehtiyojlarini birinchi o‘rinda
+                        qo‘yib, ularning hayot sifatini oshirishga qaratilgan. Bizning binolarimiz nafaqat estetik
+                        jihatdan jozibali, balki qulaylik va xavfsizlikni ta'minlaydigan zamonaviy infratuzilmalarga
+                        ega.</p>
+                </div>
+                <div class="checklist style7">
+                    <ul>
+                        <li>Premium Qurilish Materiallari</li>
+                        <li>Zamonaviy Dizayn</li>
+                        <li>Xavfsizlik</li>
+                        <li>Yuqori Darajadagi Quvvat Manbalari</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-        <div class="about-tag">
-            <div class="about-experience-tag">
-                <span class="circle-title-anime">{{ main_info.title }}</span>
-            </div>
-            <div class="about-tag-thumb">
-                <img src="{{ main_info.logo_dark.url }}" alt="img">
-            </div>
-        </div>
-        <div class="hero-bg-shape2-1 spin shape-mockup" data-top="14%" data-left="1%">
-            <img src="{% static "assets/img/shape/section_shape_2_1.jpg" %}" alt="img">
-        </div>
-    </div>
-    <!--======== / Hero Section ========-->
-    <!--==============================
-Counter Area
-==============================-->
-    <div class="counter-area-2 bg-gray overflow-hidden">
-        <div class="sec-bg-shape2-1 spin shape-mockup d-xl-block d-none" data-bottom="9%" data-right="-3%">
-            <img src="{% static "assets/img/shape/section_shape_2_1.jpg" %}" alt="img">
-        </div>
-        <div class="sec-bg-shape2-2 wave-anim shape-mockup d-xl-block d-none" data-top="19%" data-left="2%" data-bg-src="{% static "assets/img/shape/section_shape_2_2.jpg" %}">
-        </div>
-        <div class="container">
-            <div class="counter-card-wrap space">
-                <div class="counter-card style2">
-                    <div class="media-body">
-                        <h2 class="box-number"><span class="counter-number">20</span>+</h2>
-                        <p class="box-text">Qurilish Sohasida Tajriba</p>
-                    </div>
-                </div>
-                <div class="counter-card style2">
-                    <div class="media-body">
-                        <h2 class="box-number"><span class="counter-number">12</span>+</h2>
-                        <p class="box-text">Tugallangan Loyihalar</p>
-                    </div>
-                </div>
-                <div class="counter-card style2">
-                    <div class="media-body">
-                        <h2 class="box-number"><span class="counter-number">8</span>+</h2>
-                        <p class="box-text">Turdagi Xonadonlar</p>
-                    </div>
-                </div>
-                <div class="counter-card style2">
-                    <div class="media-body">
-                        <h2 class="box-number"><span class="counter-number">1200</span>+</h2>
-                        <p class="box-text">Baxtli Mijozlar</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--==============================
-About Area
-==============================-->
-    <div class="overflow-hidden space" id="about-sec">
-        <div class="sec-bg-shape2-1 spin shape-mockup d-xl-block d-none" data-bottom="9%" data-right="13%">
-            <img src="{% static "assets/img/shape/section_shape_2_1.jpg" %}" alt="img">
-        </div>
-        <div class="container">
-            <div class="row align-items-center flex-row-reverse">
-                <div class="col-xl-7 mb-50 mb-xl-0">
-                    <div class="img-box2">
-                        <div class="slider-area">
-                            <div class="swiper th-slider about-thumb-slider" id="aboutSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1","effect":"fade"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"}},"effect":"coverflow","coverflowEffect":{"rotate":"0","stretch":"350","depth":"215","modifier":"1"},"centeredSlides":"true"}'>
-                                <div class="swiper-wrapper">
-                                    {% for about_image in about_images %}
-                                    	<div class="swiper-slide">
-                                        <div class="img{{ forloop.counter }}">
-                                            <img src="{{ about_image.image.url }}" alt="About">
-                                        </div>
-                                    </div>
-                                    {% endfor %}
 
-                                </div>
-                            </div>
-                            <button data-slider-next="#aboutSlider1" class="slider-arrow slider-next"><img src="{% static "assets/img/icon/arrow-right.svg" %}" alt="icon"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5">
-                    <div class="title-area mb-32">
-                        <h2 class="sec-title style2">Biz Haqimizda</h2>
-                        <p class="sec-text">Bizning kompaniya, o'zining mukammal dizayni va yuqori sifatli qurilish materiallari bilan tanilgan, zamonaviy va premium turar-joylar yaratish bo‘yicha yetakchi hisoblanadi. Har bir loyihamizda biz mijozlarimizning ehtiyojlarini birinchi o‘rinda qo‘yib, ularning hayot sifatini oshirishga qaratilgan. Bizning binolarimiz nafaqat estetik jihatdan jozibali, balki qulaylik va xavfsizlikni ta'minlaydigan zamonaviy infratuzilmalarga ega.</p>
-                    </div>
-                    <div class="about-wrap2">
-                        <div class="checklist style2">
-                            <ul>
-                                <li><img src="{% static "assets/img/icon/checkmark.svg" %}" alt="img">Premium Qurilish Materiallari</li>
-                                <li><img src="{% static "assets/img/icon/checkmark.svg" %}" alt="img">Zamonaviy Dizayn</li>
-                                <li><img src="{% static "assets/img/icon/checkmark.svg" %}" alt="img">Xavfsizlik</li>
-                                <li><img src="{% static "assets/img/icon/checkmark.svg" %}" alt="img">Yuqori Darajadagi Quvvat Manbalari</li>
-                            </ul>
-                        </div>
-                        <div class="call-btn">
-                            <div class="icon-btn">
-                                <img src="{% static "assets/img/icon/phone.svg" %}" alt="img">
-                            </div>
-                            <div class="btn-content">
-                                <h6 class="btn-title">Biz bilan bog'laning 24/7</h6>
-                                <span class="btn-text"><a href="tel:998939000097">(+998)939000097</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-wrap mt-5">
-                        <a href="#" class="th-btn style2 th-btn-icon">Ko'proq</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--==============================
+<!--==============================
 Afzalliklar Area
 ==============================-->
-    <section class="service-area-2 rounded-80 space bg-gray">
-        <div class="sec-bg-shape2-1 spin shape-mockup d-xl-block d-none" data-bottom="5%" data-left="12%">
-            <img src="{% static "assets/img/shape/section_shape_2_1.jpg" %}" alt="img">
-        </div>
-        <div class="sec-bg-shape2-2 wave-anim shape-mockup d-xl-block d-none" data-top="-3%" data-left="5%" data-bg-src="{% static "assets/img/shape/section_shape_2_2.jpg" %}">
-        </div>
-        <div class="sec-bg-shape2-3 jump shape-mockup d-xl-block d-none" data-top="10%" data-right="2%">
-            <img src="{% static "assets/img/shape/section_shape_2_3.jpg" %}" alt="img">
-        </div>
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6">
-                    <div class="title-area">
-                        <h2 class="sec-title">Bizning Afzalliklarimiz Nimadan Iborat</h2>
-                        <p class="sec-text">Bizning binolarimiz zamonaviy arxitektura, yuqori sifatli qurilish materiallari va ekotexnologiyalar bilan jihozlangan. Har bir xonadon keng va yorug‘, shu bilan birga atrof-muhitni himoya qilishga alohida e'tibor qaratilgan. Binolarimizda xavfsizlikning eng yuqori darajasi ta'minlangan, 24 soatlik xavfsizlik xizmati va video kuzatuv tizimlari mavjud. Joylashuvimiz esa shahar markaziga yaqin bo‘lib, barcha zarur infratuzilmalar, transport vositalari va savdo markazlariga oson kirish imkonini beradi. Xuddi shu tarzda, bizning binolarimiz sizga nafaqat sifatli turar joy, balki qulay va xavfsiz hayot tarzini taqdim etadi.</p>
-                    </div>
+<section class="service-area-2 rounded-80 space bg-gray">
+    <div class="sec-bg-shape2-1 spin shape-mockup d-xl-block d-none" data-bottom="5%" data-left="12%">
+        <img src="{% static "assets/img/shape/section_shape_2_1.jpg" %}" alt="img">
+    </div>
+    <div class="sec-bg-shape2-2 wave-anim shape-mockup d-xl-block d-none" data-top="-3%" data-left="5%"
+         data-bg-src="{% static "assets/img/shape/section_shape_2_2.jpg" %}">
+    </div>
+    <div class="sec-bg-shape2-3 jump shape-mockup d-xl-block d-none" data-top="10%" data-right="2%">
+        <img src="{% static "assets/img/shape/section_shape_2_3.jpg" %}" alt="img">
+    </div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6">
+                <div class="title-area">
+                    <h2 class="sec-title">Bizning Afzalliklarimiz Nimadan Iborat</h2>
+                    <p class="sec-text">Bizning binolarimiz zamonaviy arxitektura, yuqori sifatli qurilish materiallari
+                        va ekotexnologiyalar bilan jihozlangan. Har bir xonadon keng va yorug‘, shu bilan birga
+                        atrof-muhitni himoya qilishga alohida e'tibor qaratilgan. Binolarimizda xavfsizlikning eng
+                        yuqori darajasi ta'minlangan, 24 soatlik xavfsizlik xizmati va video kuzatuv tizimlari mavjud.
+                        Joylashuvimiz esa shahar markaziga yaqin bo‘lib, barcha zarur infratuzilmalar, transport
+                        vositalari va savdo markazlariga oson kirish imkonini beradi. Xuddi shu tarzda, bizning
+                        binolarimiz sizga nafaqat sifatli turar joy, balki qulay va xavfsiz hayot tarzini taqdim
+                        etadi.</p>
                 </div>
             </div>
-            <div class="swiper th-slider" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
-                <div class="swiper-wrapper">
-                    {% for prospec in prospecs %}
-                    	<div class="swiper-slide">
+        </div>
+        <div class="swiper th-slider"
+             data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
+            <div class="swiper-wrapper">
+                {% for prospec in prospecs %}
+                    <div class="swiper-slide">
                         <div class="service-card style2">
                             <div class="service-card-icon">
-                                <img src="{{prospec.icon.url}}" alt="Icon">
+                                <img src="{{ prospec.icon.url }}" alt="Icon">
                             </div>
                             <h3 class="box-title"><a href="property-details.html">{{ prospec.title }}</a></h3>
-                            <p class="box-text">{{ prospec.description}}</p>
+                            <p class="box-text">{{ prospec.description }}</p>
                             <div class="service-img img-shine">
                                 <img src="{{ prospec.image.url }}" alt="img">
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
+                {% endfor %}
 
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!--==============================
+<!--==============================
 Xonadonlar Area
 ==============================-->
-    <section class="space bg-title-dark overflow-hidden" id="property-sec">
-        <div class="project-bg-shape2-1 sec-bg-shape2-1 text-white jump shape-mockup" data-bottom="9%" data-left="3%">
-            <img src="{% static "assets/img/shape/section_shape_2_3.jpg" %}" alt="img">
-        </div>
-        <div class="container">
-            <div class="row justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-xxl-6 col-xl-7 col-lg-6">
-                    <div class="title-area text-lg-start text-center">
-                        <h2 class="sec-title text-white">Xonadonlarimiz bilan tanishing</h2>
-                        <p class="sec-text text-white">izning premium xususiyatlarimizni o'rganing, ular zamonaviy qulayliklar, a'lo darajadagi dizayn va betakror joylashuvlarni taklif etadi. Siz yangi uyingizni yoki aqlli sarmoyani izlayotgan bo'lsangiz, har qanday ehtiyoj va byudjetga mos variantlarimiz mavjud.</p>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="sec-btn">
-                        <a href="#" class="th-btn style-border3 th-btn-icon">Browse All Project</a>
-                    </div>
+<section class="space overflow-hidden bg-title-dark" id="property-sec">
+    <div class="sec-bg-shape2-1 spin shape-mockup text-white d-xl-block d-none" data-top="15%" data-right="-2%">
+        <img src={% static "assets/img/shape/section_shape_2_1.jpg" %} alt="img">
+    </div>
+    <div class="sec-bg-shape2-3 jump text-white shape-mockup d-xl-block d-none" data-top="10%" data-left="3%">
+        <img src={% static "assets/img/shape/section_shape_2_3.jpg" %} alt="img">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="title-area text-center">
+                    <span class="sub-title text-white">Mavjud xonadonlar</span>
+                    <h2 class="sec-title text-white">Xonadonlarimiz bilan tanishing</h2>
+                    <p class="sec-text text-white">Sizning premium xususiyatlarimizni o'rganing, ular zamonaviy
+                        qulayliklar, a'lo darajadagi dizayn va betakror joylashuvlarni taklif etadi. Siz yangi uyingizni
+                        yoki aqlli sarmoyani izlayotgan bo'lsangiz, har qanday ehtiyoj va byudjetga mos variantlarimiz
+                        mavjud.
+
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-0">
-            <div class="slider-area project-slider2">
-                <div class="swiper th-slider" id="projectSlider2" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"}}}'>
-                    <div class="swiper-wrapper">
-                        {% for apartment in apartments %}
-                        	<div class="swiper-slide">
-                            <div class="portfolio-card style2">
-                                <div class="portfolio-img img-shine" data-bs-toggle="#" data-bs-target="#portfolioModal">
-                                    <img src="{{ apartment.image.url }}" alt="project image">
-                                    <div class="portfolio-card-shape">
-                                        <img src="{{ apartment.floor_plan.url }}" alt="img">
-                                    </div>
+    </div>
+    <div class="container th-container2">
+        <div class="slider-area property-slider2 slider-drag-wrap">
+            <div class="swiper th-slider"
+                 data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1500":{"slidesPerView":"4"}},"spaceBetween":"32","grabCursor":"true","slideToClickedSlide":"true"}'>
+                <div class="swiper-wrapper">
+                    {% for apartment in apartments %}
+                        <div class="swiper-slide">
+                            <div class="property-card7">
+                                <div class="property-card-thumb img-shine">
+                                    <img src={{apartment.image.url}} alt="img">
                                 </div>
-                                <div class="portfolio-content">
-                                    <h3 class="portfolio-title"><a href="#">{{ apartment.title }}</a></h3>
-                                    <p class="portfolio-text">{{ apartment.description }}</p>
+                                <div class="property-card-meta">
+                                    <span><img src={% static "assets/img/icon/property-icon1-1.svg" %} alt="img">{{ apartment.rooms }}</span>
+                                    <span><img src={% static "assets/img/icon/property-icon1-2.svg" %} alt="img">{{ apartment.bathrooms }}</span>
+                                    <span><img src={% static "assets/img/icon/property-icon1-3.svg" %} alt="img">{{ apartment.area }} m2</span>
+                                </div>
+                                <div class="property-card-details">
+                                    <div class="media-left">
+                                        <h4 class="property-card-title"><a href="#">{{ apartment.title }}</a>
+                                        </h4>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <a href="#contact-sec"
+                                           class="th-btn style-border th-btn-icon">To'liq ma'lumot olish</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        {% endfor %}
+                    {% endfor %}
 
 
-
-                    </div>
                 </div>
-                <button data-slider-prev="#projectSlider2" class="slider-arrow slider-prev"><img src="{% static "assets/img/icon/arrow-left.svg" %}" alt="img"></button>
             </div>
         </div>
-    </section>
-
-
-
+    </div>
+</section>
 
 
 <!--==============================
 Appointment Area
 ==============================-->
-    <div class="space-bottom bg-title-dark overflow-hidden" id="contact-sec">
-        <div class="sec-bg-shape2-1 spin shape-mockup d-xl-block d-none text-white" data-bottom="9%" data-left="34%">
-            <img src="{% static "assets/img/shape/section_shape_2_1.jpg" %}" alt="img">
-        </div>
-        <div class="sec-bg-shape2-2 wave-anim shape-mockup d-xl-block d-none text-white" data-top="19%" data-left="12%" data-bg-src="{% static "assets/img/shape/section_shape_2_2.jpg" %}">
-        </div>
-        <div class="container">
-            <div class="row gx-60 align-items-center">
-                <div class="col-lg-5">
-                    <div class="appointment-thumb text-xl-end mb-lg-0 mb-50">
-                        <img src="{% static "assets/img/normal/booking_1_1.png" %}" alt="img">
-                    </div>
+<div class="space-bottom bg-title-dark overflow-hidden" id="contact-sec">
+    <div class="sec-bg-shape2-1 spin shape-mockup d-xl-block d-none text-white" data-bottom="9%" data-left="34%">
+        <img src="{% static "assets/img/shape/section_shape_2_1.jpg" %}" alt="img">
+    </div>
+    <div class="sec-bg-shape2-2 wave-anim shape-mockup d-xl-block d-none text-white" data-top="19%" data-left="12%"
+         data-bg-src="{% static "assets/img/shape/section_shape_2_2.jpg" %}">
+    </div>
+    <div class="container">
+        <div class="row gx-60 align-items-center">
+            <div class="col-lg-5">
+                <div class="appointment-thumb text-xl-end mb-lg-0 mb-50">
+                    <img src="{% static "assets/img/normal/booking_1_1.png" %}" alt="img">
                 </div>
-                <div class="col-lg-7">
-                    <div class="title-area mb-35">
-                        <h2 class="sec-title text-white">Kontakt qoldirish</h2>
-                    </div>
-                    <form action="https://html.themeholy.com/realar/demo/mail.php" method="POST" class="appointment-form ajax-contact me-xl-5">
-                        <div class="row">
-                            <div class="form-group style-border3 col-md-6">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Ism">
-                                <i class="fal fa-user"></i>
-                            </div>
-                            <div class="form-group style-border3 col-md-6">
-                                <input type="tel" class="form-control" name="email" id="email" placeholder="Telefon">
-                                <i class="fal fa-envelope"></i>
-                            </div>
-                            <div class="col-12 form-btn mt-4">
-                                <button class="th-btn style-border">Jo'natish <span class="btn-icon"><img src="{% static "assets/img/icon/paper-plane.svg" %}" alt="img"></span></button>
-                            </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="title-area mb-35">
+                    <h2 class="sec-title text-white">Kontakt qoldirish</h2>
+                </div>
+                <form action="https://html.themeholy.com/realar/demo/mail.php" method="POST"
+                      class="appointment-form ajax-contact me-xl-5">
+                    <div class="row">
+                        <div class="form-group style-border3 col-md-6">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Ism">
+                            <i class="fal fa-user"></i>
                         </div>
-                        <p class="form-messages mb-0 mt-3"></p>
-                    </form>
-                </div>
-
+                        <div class="form-group style-border3 col-md-6">
+                            <input type="tel" class="form-control" name="email" id="email" placeholder="Telefon">
+                            <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="col-12 form-btn mt-4">
+                            <button class="th-btn style-border">Jo'natish <span class="btn-icon"><img
+                                    src="{% static "assets/img/icon/paper-plane.svg" %}" alt="img"></span></button>
+                        </div>
+                    </div>
+                    <p class="form-messages mb-0 mt-3"></p>
+                </form>
             </div>
 
         </div>
-    </div><!--==============================
+
+    </div>
+</div><!--==============================
 Contact Area
 ==============================-->
-    <div class="space bg-gray position-relative overflow-hidden" id="contact-sec">
-        <div class="contact-bg-shape1-1 jump shape-mockup" data-bottom="30%" data-left="0%">
-            <img src="{% static "assets/img/shape/section_shape_2_3.jpg" %}" alt="img">
-        </div>
-        <div class="container">
-            <div class="row gx-35">
-                <div class="col-lg-5">
-                    <div class="title-area">
-                        <h2 class="sec-title">Bog'lanish</h2>
+<div class="space bg-gray position-relative overflow-hidden" id="contact-sec">
+    <div class="contact-bg-shape1-1 jump shape-mockup" data-bottom="30%" data-left="0%">
+        <img src="{% static "assets/img/shape/section_shape_2_3.jpg" %}" alt="img">
+    </div>
+    <div class="container">
+        <div class="row gx-35">
+            <div class="col-lg-5">
+                <div class="title-area">
+                    <h2 class="sec-title">Bog'lanish</h2>
+                </div>
+                <div class="about-contact-grid">
+                    <div class="about-contact-icon text-white">
+                        <img src="{% static "assets/img/icon/location-dot.svg" %}" alt="icon">
                     </div>
-                    <div class="about-contact-grid">
-                        <div class="about-contact-icon text-white">
-                            <img src="{% static "assets/img/icon/location-dot.svg" %}" alt="icon">
-                        </div>
-                        <div class="about-contact-details">
-                            <h6 class="about-contact-details-title">Manzil:</h6>
-                            <p class="about-contact-details-text">Qarshi shahri </p>
-                            <p class="about-contact-details-text">.</p>
-                        </div>
-                    </div>
-                    <div class="about-contact-grid">
-                        <div class="about-contact-icon text-white">
-                            <img src="{% static "assets/img/icon/phone.svg" %}" alt="icon">
-                        </div>
-                        <div class="about-contact-details">
-                            <h6 class="about-contact-details-title">Telefon:</h6>
-                            <p class="about-contact-details-text"><a href="tel:998781137079">+998 78 113 7079</a></p>
-                        </div>
+                    <div class="about-contact-details">
+                        <h6 class="about-contact-details-title">Manzil:</h6>
+                        <p class="about-contact-details-text">Qarshi shahri </p>
+                        <p class="about-contact-details-text">.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="location-map contact-sec-map">
-            <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1478.7950744614795!2d65.79002506126653!3d38.848710635144414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1738048443707!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="location-map-address">
-                <div class="thumb">
-                    <img src="{{ main_info.logo_dark.url }}" alt="img">
-                </div>
-                <div class="media-body">
-                    <h4 class="title">Sotuv Ofisi</h4>
-                    <p class="text">Qarshi shahar, Mo'jal:Ucell</p>
+                <div class="about-contact-grid">
+                    <div class="about-contact-icon text-white">
+                        <img src="{% static "assets/img/icon/phone.svg" %}" alt="icon">
+                    </div>
+                    <div class="about-contact-details">
+                        <h6 class="about-contact-details-title">Telefon:</h6>
+                        <p class="about-contact-details-text"><a href="tel:998781137079">+998 78 113 7079</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-   <!--==============================
-    Popup Modal v1
+    <div class="location-map contact-sec-map">
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1478.7950744614795!2d65.79002506126653!3d38.848710635144414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1738048443707!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="location-map-address">
+            <div class="thumb">
+                <img src="{{ main_info.logo_dark.url }}" alt="img">
+            </div>
+            <div class="media-body">
+                <h4 class="title">Sotuv Ofisi</h4>
+                <p class="text">Qarshi shahar, Mo'jal:Ucell</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--==============================
+ Popup Modal v1
 ============================== -->
-    <div class="th-modal modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="container">
-                    <button type="button" class="icon-btn btn-close bg-title-dark" data-bs-dismiss="modal" aria-label="Close"><i class="fa-regular fa-xmark"></i></button>
-                    <div class="page-single bg-title-dark">
-                        <div class="page-img mb-30">
-                            <img class="w-100 rounded-20" src="{% static "assets/img/project/project_pop1_1.png" %}" alt="portfolio Image">
-                        </div>
-                        <div class="page-content">
-                            <h2 class="h3 page-title text-white fw-medium">Where Visibility Meets Success</h2>
-                            <div class="row gy-30">
-                                <div class="col-xl-7">
-                                    <p class="mb-20 text-light">The timeline varies depending on the complexity of the project. Simple projects may take a few weeks, while more complex ones could extend to several months. Timelines are influenced by factors like scope, feedback iterations, and client responsiveness.</p>
+<div class="th-modal modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="container">
+                <button type="button" class="icon-btn btn-close bg-title-dark" data-bs-dismiss="modal"
+                        aria-label="Close"><i class="fa-regular fa-xmark"></i></button>
+                <div class="page-single bg-title-dark">
+                    <div class="page-img mb-30">
+                        <img class="w-100 rounded-20" src="{% static "assets/img/project/project_pop1_1.png" %}"
+                             alt="portfolio Image">
+                    </div>
+                    <div class="page-content">
+                        <h2 class="h3 page-title text-white fw-medium">Where Visibility Meets Success</h2>
+                        <div class="row gy-30">
+                            <div class="col-xl-7">
+                                <p class="mb-20 text-light">The timeline varies depending on the complexity of the
+                                    project. Simple projects may take a few weeks, while more complex ones could extend
+                                    to several months. Timelines are influenced by factors like scope, feedback
+                                    iterations, and client responsiveness.</p>
 
-                                    <p class="mb-xl-4 mb-0 text-light">Project timelines vary based on complexity and scope. Small projects may take a few weeks, while larger ones could span several months. Timelines are established during project kickoff. We use a range of industry-standard tools such as Sketch.</p>
-                                </div>
-                                <div class="col-xl-5">
-                                    <div class="checklist">
-                                        <ul>
-                                            <li class="text-light"><strong>Service Category:</strong> Rubix Carabil Tower</li>
-                                            <li class="text-light"><strong>Clients:</strong> David Malan</li>
-                                            <li class="text-light"><strong>Project Date:</strong> 13 June, 2020</li>
-                                            <li class="text-light"><strong>Avenue End Date:</strong> 22 July, 2023</li>
-                                            <li class="text-light"><strong>Locations:</strong> NewYork - 2546 Firs, USA</li>
-                                        </ul>
-                                    </div>
+                                <p class="mb-xl-4 mb-0 text-light">Project timelines vary based on complexity and scope.
+                                    Small projects may take a few weeks, while larger ones could span several months.
+                                    Timelines are established during project kickoff. We use a range of
+                                    industry-standard tools such as Sketch.</p>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="checklist">
+                                    <ul>
+                                        <li class="text-light"><strong>Service Category:</strong> Rubix Carabil Tower
+                                        </li>
+                                        <li class="text-light"><strong>Clients:</strong> David Malan</li>
+                                        <li class="text-light"><strong>Project Date:</strong> 13 June, 2020</li>
+                                        <li class="text-light"><strong>Avenue End Date:</strong> 22 July, 2023</li>
+                                        <li class="text-light"><strong>Locations:</strong> NewYork - 2546 Firs, USA</li>
+                                    </ul>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="row gy-30 gx-40 align-items-center">
-                                <div class="col-xl-6">
-                                    <div class="page-img mb-0">
-                                        <img class="w-100 rounded-20" src="{% static "assets/img/project/project_pop2_1.png" %}" alt="portfolio Image">
-                                    </div>
+                        <div class="row gy-30 gx-40 align-items-center">
+                            <div class="col-xl-6">
+                                <div class="page-img mb-0">
+                                    <img class="w-100 rounded-20"
+                                         src="{% static "assets/img/project/project_pop2_1.png" %}"
+                                         alt="portfolio Image">
                                 </div>
-                                <div class="col-xl-6">
-                                    <h4 class="box-title text-white fw-medium">Services Benefits:</h4>
-                                    <p class="text-light">We can do both. We can adhere to existing brand guidelines, ensuring consistency, or help develop new ones if a client is looking for a fresh identity. Our goal is to align the UI/UX design with the brand's overall strategy product meets the needs.</p>
-                                    <div class="checklist style3">
-                                        <ul>
-                                            <li class="text-light"><i class="far fa-check-circle"></i>We use the latest diagnostic equipment</li>
-                                            <li class="text-light"><i class="far fa-check-circle"></i>Automotive service our clients receive</li>
-                                            <li class="text-light"><i class="far fa-check-circle"></i>We are a member of Professional Service</li>
-                                            <li class="text-light"><i class="far fa-check-circle"></i>Digital how will activities impact traditional</li>
-                                            <li class="text-light"><i class="far fa-check-circle"></i>Architect and technical engineer</li>
-                                        </ul>
-                                    </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <h4 class="box-title text-white fw-medium">Services Benefits:</h4>
+                                <p class="text-light">We can do both. We can adhere to existing brand guidelines,
+                                    ensuring consistency, or help develop new ones if a client is looking for a fresh
+                                    identity. Our goal is to align the UI/UX design with the brand's overall strategy
+                                    product meets the needs.</p>
+                                <div class="checklist style3">
+                                    <ul>
+                                        <li class="text-light"><i class="far fa-check-circle"></i>We use the latest
+                                            diagnostic equipment
+                                        </li>
+                                        <li class="text-light"><i class="far fa-check-circle"></i>Automotive service our
+                                            clients receive
+                                        </li>
+                                        <li class="text-light"><i class="far fa-check-circle"></i>We are a member of
+                                            Professional Service
+                                        </li>
+                                        <li class="text-light"><i class="far fa-check-circle"></i>Digital how will
+                                            activities impact traditional
+                                        </li>
+                                        <li class="text-light"><i class="far fa-check-circle"></i>Architect and
+                                            technical engineer
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -602,78 +578,80 @@ Contact Area
                 </div>
             </div>
         </div>
-    </div><!--==============================
+    </div>
+</div><!--==============================
 	Footer Area
 ==============================-->
-    <footer class="footer-wrapper footer-layout2 bg-white">
-        <div class="container">
-            <div class="footer-wrap space-top">
-            </div>
+<footer class="footer-wrapper footer-layout2 bg-white">
+    <div class="container">
+        <div class="footer-wrap space-top">
         </div>
-        <div class="copyright-wrap bg-title-dark">
-            <div class="container">
-                <div class="row gy-2 align-items-center">
-                    <div class="col-lg-6">
-                        <p class="copyright-text">
-                            Copyright <i class="fal fa-copyright"></i> 2025 <a href="index.html">Sharq Development</a>, All rights reserved.</p>
-                    </div>
-                    <div class="col-lg-6 text-center text-lg-end">
-                        <div class="footer-links">
-                            <ul>
-                                <li><a href="#">Terms of service</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">Cookies</a></li>
-                            </ul>
-                        </div>
+    </div>
+    <div class="copyright-wrap bg-title-dark">
+        <div class="container">
+            <div class="row gy-2 align-items-center">
+                <div class="col-lg-6">
+                    <p class="copyright-text">
+                        Copyright <i class="fal fa-copyright"></i> 2025 <a href="index.html">Sharq Development</a>, All
+                        rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <!--********************************
-			Code End  Here
-	******************************** -->
-
-    <!-- Scroll To Top -->
-    <div class="scroll-top">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
-        </svg>
     </div>
+</footer>
 
-    <!--==============================
-    All Js File
+<!--********************************
+        Code End  Here
+******************************** -->
+
+<!-- Scroll To Top -->
+<div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+              style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+</div>
+
+<!--==============================
+All Js File
 ============================== -->
-    <!-- Jquery -->
-    <script src="{% static "assets/js/vendor/jquery-3.7.1.min.js" %}"></script>
+<!-- Jquery -->
+<script src="{% static "assets/js/vendor/jquery-3.7.1.min.js" %}"></script>
 
-    <!-- Swiper Js -->
-    <script src="{% static "assets/js/swiper-bundle.min.js" %}"></script>
-    <!-- Bootstrap -->
-    <script src="{% static "assets/js/bootstrap.min.js" %}"></script>
-    <!-- Magnific Popup -->
-    <script src="{% static "assets/js/jquery.magnific-popup.min.js" %}"></script>
-    <!-- Counter Up -->
-    <script src="{% static "assets/js/jquery.counterup.min.js" %}"></script>
-    <!-- Range Slider -->
-    <script src="{% static "assets/js/jquery-ui.min.js" %}"></script>
-    <!-- Isotope Filter -->
-    <script src="{% static "assets/js/imagesloaded.pkgd.min.js" %}"></script>
-    <script src="{% static "assets/js/isotope.pkgd.min.js" %}"></script>
-    <!-- Gsap -->
-    <script src="{% static "assets/js/gsap.min.js" %}"></script>
-    <!-- DateTime JS -->
-    <script src="{% static "assets/js/jquery.datetimepicker.min.js" %}"></script>
+<!-- Swiper Js -->
+<script src="{% static "assets/js/swiper-bundle.min.js" %}"></script>
+<!-- Bootstrap -->
+<script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+<!-- Magnific Popup -->
+<script src="{% static "assets/js/jquery.magnific-popup.min.js" %}"></script>
+<!-- Counter Up -->
+<script src="{% static "assets/js/jquery.counterup.min.js" %}"></script>
+<!-- Range Slider -->
+<script src="{% static "assets/js/jquery-ui.min.js" %}"></script>
+<!-- Isotope Filter -->
+<script src="{% static "assets/js/imagesloaded.pkgd.min.js" %}"></script>
+<script src="{% static "assets/js/isotope.pkgd.min.js" %}"></script>
+<!-- Gsap -->
+<script src="{% static "assets/js/gsap.min.js" %}"></script>
+<!-- DateTime JS -->
+<script src="{% static "assets/js/jquery.datetimepicker.min.js" %}"></script>
 
-    <!-- 360 degree Js -->
-    <script src="{% static "assets/js/threesixty.min.js" %}"></script>
-    <script src="{% static "assets/js/panolens.min.js" %}"></script>
+<!-- 360 degree Js -->
+<script src="{% static "assets/js/threesixty.min.js" %}"></script>
+<script src="{% static "assets/js/panolens.min.js" %}"></script>
 
 
-
-    <!-- Main Js File -->
-    <script src="{% static "assets/js/main.js" %}"></script>
+<!-- Main Js File -->
+<script src="{% static "assets/js/main.js" %}"></script>
 </body>
 
 
